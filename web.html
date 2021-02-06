@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web.for.u</title>
+    <link rel="stylesheet" href="stylesheet.css">
+<style> 
+body { font-family: "Avenir Next"; background-color:#5a995e;}
+p,h1,h3,h2,h4{
+  color: black;
+}
+h2,h3{
+  font-weight:bold ;
+  background-color: cyan;
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+ .header-logo,li{
+  margin: 8px ;
+  text-align: center;
+  text-shadow: 11px 6px 4px rgba(0,0,0,0.53), 
+    0px -4px 10px rgba(255,255,255,0.63);
+}
+li { list-style: none;font-weight:bold ; } 
+
+.header-logo {
+  /* WIDTH & BORDER RADIUS */
+  float: left; font-size: 44px; padding: 12px 30px;
+  margin-left:80px;
+  color:  #660033;
+  width: 20%;
+  border-radius: 0%;
+  background: linear-gradient(5deg, #a7cfdf 0%,#23538a 100%);
+  
+}
+.header-logo:hover {
+  padding: 1% 1% 1% 1%;
+  color: blue;
+  border-radius:40px;
+  background:yellow;
+}
+
+
+.header-list li{ float: right; padding: 30px 30px; color: White;background-color: #660033; 
+margin-right:80px;} 
+.header-list li:hover{ float: right; padding: 30px 30px; color: Blue; background-color: yellow; border-radius: 40px;} 
+.main { padding: 100px 80px; } 
+.copy-container h2 
+{
+  text-align:center;
+  background-color: #0f0f0a;
+  border-radius: 20px;
+  padding: 10px 70px;
+  color: #676767;
+  font-size: 140px;
+}
+.wrapper {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+.fixed-bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%; 
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: table;
+}
+.fixed-bg h1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.scroll-bg {
+  background-color: #0f0f0a;
+  padding: 10px 70px;
+  color: #676767;
+}
+.copy-container h2 { font-size: 60px; } 
+.copy-container span { color: #ff4a4a; } 
+.contents { height: 500px; margin-top: 100px; } .section-title { border-bottom: 2px solid #dee7ec; font-size: 28px; padding-bottom: 15px; margin-bottom: 50px; }
+.contents-item { float: left; margin-right: 40px; } 
+.contents-item p { font-size: 24px; margin-top: 30px; } 
+.contact-form { padding-top: 100px; } /* Add CSS for <input> and <textarea> tags */
+input, textarea{ width: 400px; margin-top: 10px; margin-bottom: 30px; padding: 20px; font-size: 18px; border : 1px solid #dee7ec; } 
+.contact-submit{ background-color: #dee7ec; color:#889eab; }
+.footer { background-color: #2f5167; color: #fff; height: 120px; padding: 40px; } 
+.footer-logo { float: left; font-size: 32px; } .footer-list { float: right; } .footer-list li { padding-bottom: 20px; }
+/* first section */
+.bg-1 {
+  background-image: url('https://www.wallpapertip.com/wmimgs/160-1606325_slider-apple-wireless-keyboard.jpg');
+}
+/* third section */
+.bg-2 {
+  background-image: url('https://www.syncfusion.com/blogs/wp-content/uploads/2020/07/Top-6-Front-End-Web-Development-Tools-to-Increase-Your-Productivity-in-2020-1.jpg');
+}
+.card-1{
+  position: relative;
+  height: 280px;
+  width: 230px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 4px 3px rgba(0,0,0,0.12), 0 1px     2px rgba(0,0,0,0.24);/*no need btw*/
+}
+.card-1__bg{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+}
+.card-1__bg:after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+}
+.card-1__bg>img{
+  width: 100%;
+  height: 100%;
+}
+
+.card-1__title{
+  background-color: black;
+  font-size: 1.2em;
+  position: absolute;
+  z-index: 1;
+  top: 13px;
+  left: 14px;
+  padding: 1px;
+  color: cyan;
+}
+
+.card-1__detail{
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 25%;
+  padding: 0px 10px;
+  color: black;
+  background: khaki;
+  border-radius: 5px;
+}
+
+</style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo">Web-for-You</div>
+      <div class="header-list">
+        <ul>
+          <li>Contact Us</li>
+          <li>About Us</li>
+          <li>Home</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      
+      <div class="wrapper"> 
+          <div class="fixed-bg bg-1">
+            <div class="copy-container">
+            <h2>Welcome to the World of Developement <span>...!</span>
+            </h2>
+         </div>
+         <div class="contents">
+        <h4 class="section-title">Have a glimpse on our contributions.. </h4>
+      <!--Card 1-->
+ <div class="card-1">
+    <div class="card-1__bg">
+      <img src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" alt="">
+      <div class="card-1__title">Webdev</div>
+    </div>
+    <div class="card-1__detail">
+      A very useful ...<a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a>
+    </div>
+ </div>
+ <!--Card 1-->
+ <div class="card-1">
+    <div class="card-1__bg">
+      <img src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" alt="">
+      <div class="card-1__title">Webdev</div>
+    </div>
+    <div class="card-1__detail">
+      A very useful ...<a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a>
+    </div>
+ </div>
+ <!--Card 1-->
+ <div class="card-1">
+    <div class="card-1__bg">
+      <img src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" alt="">
+      <div class="card-1__title">Webdev</div>
+    </div>
+    <div class="card-1__detail">
+      A very useful ...<a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a>
+    </div>
+ </div>
+<!--Card 1-->
+ <div class="card-1">
+    <div class="card-1__bg">
+      <img src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" alt="">
+      <div class="card-1__title">Webdev</div>
+    </div>
+    <div class="card-1__detail">
+      A very useful ...<a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a>
+    </div>
+ </div>
+<!--Card 1-->
+ <div class="card-1">
+    <div class="card-1__bg">
+      <img src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" alt="">
+      <div class="card-1__title">Webdev</div>
+    </div>
+    <div class="card-1__detail">
+      A very useful ...<a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a>
+    </div>
+ </div>
+   <!--Card 1-->
+ <div class="card-1">
+    <div class="card-1__bg">
+      <img src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" alt="">
+      <div class="card-1__title">Webdev</div>
+    </div>
+    <div class="card-1__detail">
+      A very useful ...<a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a>
+    </div>
+ </div>
+<!--Card 1-->
+ <div class="card-1">
+    <div class="card-1__bg">
+      <img src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" alt="">
+      <div class="card-1__title">Webdev</div>
+    </div>
+    <div class="card-1__detail">
+      A very useful ...<a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a>
+    </div>
+ </div>
+ <!--Card 1-->
+ <div class="card-1">
+    <div class="card-1__bg">
+      <img src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" alt="">
+      <div class="card-1__title">Webdev</div>
+    </div>
+    <div class="card-1__detail">
+      A very useful ...<a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a>
+    </div>
+ </div>
+<!--Card 1-->
+ <div class="card-1">
+    <div class="card-1__bg">
+      <img src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" alt="">
+      <div class="card-1__title">Webdev</div>
+    </div>
+    <div class="card-1__detail">
+      A very useful ...<a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a>
+    </div>
+ </div>
+<!--Card 1-->
+ <div class="card-1">
+    <div class="card-1__bg">
+      <img src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" alt="">
+      <div class="card-1__title">Webdev</div>
+    </div>
+    <div class="card-1__detail">
+      A very useful ...<a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a>
+    </div>
+ </div>      
+           
+           
+          <div class="contents-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ8WveQ-DlC7FQ7hxWf8nf-SMXfebH8sFDZw&usqp=CAU">
+          <p>First</p>
+        </div>  
+        <div class="contents-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8AfUys79XvxPGQS2JxWa15a8hGmDszn9KA&usqp=CAU">
+          <p>Second</p>
+        </div>
+        <div class="contents-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ8WveQ-DlC7FQ7hxWf8nf-SMXfebH8sFDZw&usqp=CAU">
+          <p>Third</p>
+        </div>
+        <div class="contents-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8AfUys79XvxPGQS2JxWa15a8hGmDszn9KA&usqp=CAU">
+          <p>Fourth</p>
+        </div>
+           
+         <div class="contents-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ8WveQ-DlC7FQ7hxWf8nf-SMXfebH8sFDZw&usqp=CAU">
+          <p>Fifth</p>
+        </div>
+      </div>    
+      </div>
+        <div class="scroll-bg">
+            <h3>Have Fun.....             </h3>
+         </div>
+         <div class="fixed-bg bg-2">
+            <h1>Background Lv</h1>
+           
+           
+      
+      <div class="contact-form">
+        <h3 class="section-title">Contact us</h3>
+        <p>Email</p>
+        <!-- Add an <input> tag -->
+        <input>
+        
+        <p>What impressed You</p>
+        <!-- Add a <textarea> tag --> 
+        <textarea></textarea>
+        <p>*</p>
+        <!-- Add an <input> tag -->
+        <input type="submit" class="contact-submit" value="Send">
+            </div>
+          </div>
+         </div> 
+     </div>  
+    <div class="footer">
+      <div class="footer-logo">Web.for.u</div>
+      <div class="footer-list">
+        <ul>
+          <li>About us</li>
+          <li>Home</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
